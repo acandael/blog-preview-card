@@ -59,7 +59,14 @@ article {
   box-shadow: 8px 8px 0px 0px #000;
 }
 
-button {
+article:active {
+  box-shadow: 16px 16px 0px 0px #000;
+}
+
+a.tag {
+  width: 58px;
+  height: 21px;
+  text-decoration: none;
   font-family: "Figtree-ExtraBold", sans-serif;
   color: var(--black, #111);
   font-size: 14px;
@@ -72,28 +79,31 @@ button {
   align-items: center;
   gap: 8px;
   border-radius: 4px;
-  border: none;
   background: var(--yellow, #f4d04e);
 }
 
-h1 {
-  font-family: "Figtree-ExtraBold", sans-serif;
-  color: var(--black, #111);
-  font-size: clamp(20px, 5vw, 24px);
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%; /* 36px */
-  align-self: stretch;
+a.title {
+  text-decoration: none;
 }
 
 h1:hover {
   color: var(--yellow, #f4d04e);
 }
 
+h1 {
+  font-family: "Figtree-ExtraBold", sans-serif;
+  color: var(--black, #111);
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 36px */
+  align-self: stretch;
+}
+
 p.date {
   font-family: "Figtree-SemiBold", sans-serif;
   color: var(--black, #111);
-  font-size: clamp(12px, 4vw, 14px);
+  font-size: clamp(0.75rem, 4vw, 0.88rem);
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 21px */
@@ -102,7 +112,7 @@ p.date {
 p.description {
   font-family: "Figtree-SemiBold", sans-serif;
   color: var(--grey, #7f7f7f);
-  font-size: clamp(14px, 4vw, 16px);
+  font-size: clamp(0.88rem, 4vw, 1rem);
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 24px */
